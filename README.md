@@ -19,7 +19,7 @@ const fruits = new Map([
 ##### Creating a new Map object
 Creating a new Map object and add elements with the set() method.
 
-###### 📌Same Object not to be created. ```javascript fruits.set("91345678912","345612"); ``` only chenge value. 
+###### 📌 Same Object not to be created. ```javascript fruits.set("91345678912","345612"); ``` only chenge value. 
 ```javascript
 fruits.set("91123456789","123456");
 fruits.set("91234567891","234561");
@@ -113,6 +113,7 @@ function myCallback({ quantity }) {
 const result = Map.groupBy(fruits, myCallback);
 console.log(result);
 ```
+
 * **Output**
 ```
  Map(2) {
@@ -126,4 +127,85 @@ console.log(result);
   ]
 }
 ```
+##### Find a value in Map() || JavaScript Map has()
+The has() method returns true if a key exists in a map.
+```javascript
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
 
+
+// Group by Quantity
+const result = fruits.has("apples");
+console.log(result);
+```
+* **Output**
+```javascript
+// 'apples' is valid in Fruits.
+true
+```
+##### JavaScript Map keys()
+The keys() method returns an iterator object with the keys in a map: The keys() method does not change the original met.
+
+```javascript
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// List all Keys
+let text = "";
+for (const x of fruits.keys()) {
+  text += x;
+}
+console.log(text);
+```
+* **Output**
+```
+applesbananasoranges
+```
+##### Find No Of Size
+The size property returns the number of elements in a map.
+```javascript
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+console.log(fruits.size);
+```
+* **Output**
+```
+3
+```
+##### JavaScript Map values()
+* **The values() method returns an iterator object with the values in a map.**
+* **The values() method does not change the original map.**
+```javascript
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+let text = "";
+for (const x of fruits.values()) {
+  text += x;
+}
+
+console.log(text);
+
+```
+* **Output**
+```javascript
+// console.log(text);
+500300200
+```
