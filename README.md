@@ -3,11 +3,11 @@
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/ChangeWithTanmay/generate-New-Idea)
 
 # Map in JavaScript.
-##### Declaration:
+### Declaration:
 ```javascript
 const fruits = new Map();
 ```
-###### Other way to Create Map.
+##### Other way to Create Map.
 ```javascript
 const fruits = new Map([
   ["apples", 500],
@@ -16,17 +16,17 @@ const fruits = new Map([
 ]);
 ```
 
-##### Creating a new Map object
+### Creating a new Map object
 Creating a new Map object and add elements with the set() method.
 
-###### 📌 Same Object not to be created. ```javascript fruits.set("91345678912","345612"); ``` only chenge value. 
+#### 📌 Same Object not to be created. ```javascript fruits.set("91345678912","345612"); ``` only chenge value. 
 ```javascript
 fruits.set("91123456789","123456");
 fruits.set("91234567891","234561");
 fruits.set("91345678912","345612");
 fruits.set("91345678912","345613"); 
 ```
-###### Output
+##### Output
 ```output
 Map(3) {
 '91123456789' => '123456',
@@ -35,21 +35,21 @@ Map(3) {
 }
 ```
 
-##### Clear All Map Value
+### Clear All Map Value
 The clear() method removes all the elements from a map.
 ```javascript
 fruits.clear();
 ```
-###### Output
+##### Output
 ```bash
 Map(0){}
 ```
-##### Delete any spcific value
+### Delete any spcific value
 The delete() method deletes an element from a map.
 ```javascript
 fruits.delete("apples");
 ```
-##### JavaScript Map entries()
+### JavaScript Map entries()
 1. **The entries() method returns an iterator object with the [key,values] in a map.**
 2. **The entries() method does not change the original map.**
 ```javascript
@@ -59,12 +59,12 @@ for (const x of fruits.entries()) {
 }
 console.log(text);
 ```
-###### output
+#### output
 ```
 apples,500bananas,300oranges,20091123456789,12345691234567891,23456191345678912,345613 
 ```
 
-##### JavaScript Map forEach()
+### JavaScript Map forEach()
 It is Similerly, forEach()
 ```javascript
 let text = "";
@@ -74,12 +74,12 @@ fruits.forEach (function(value, key) {
 
 console.log(text);
 ```
-###### output
+#### output
 ```
 apples = 500bananas = 300oranges = 20091123456789 = 12345691234567891 = 23456191345678912 = 345613
 ```
 
-##### JavaScript Map get()
+### JavaScript Map get()
 The get() method gets the value of a key in a map.
 
 ```javascript
@@ -91,7 +91,7 @@ console.log(value);
 500
 ```
 
-##### javaScript Map.groupBy()
+### javaScript Map.groupBy()
 * The Map.groupBy() method groups elements of an object according to string values returned from a callback function.
 
 * The Map.groupBy() method does not change the original object.
@@ -127,7 +127,7 @@ console.log(result);
   ]
 }
 ```
-##### Find a value in Map() || JavaScript Map has()
+### Find a value in Map() || JavaScript Map has()
 The has() method returns true if a key exists in a map.
 ```javascript
 // Create a Map
@@ -147,7 +147,7 @@ console.log(result);
 // 'apples' is valid in Fruits.
 true
 ```
-##### JavaScript Map keys()
+### JavaScript Map keys()
 The keys() method returns an iterator object with the keys in a map: The keys() method does not change the original met.
 
 ```javascript
@@ -169,7 +169,7 @@ console.log(text);
 ```
 applesbananasoranges
 ```
-##### Find No Of Size
+### Find No Of Size
 The size property returns the number of elements in a map.
 ```javascript
 // Create a Map
@@ -185,7 +185,7 @@ console.log(fruits.size);
 ```
 3
 ```
-##### JavaScript Map values()
+### JavaScript Map values()
 * **The values() method returns an iterator object with the values in a map.**
 * **The values() method does not change the original map.**
 ```javascript
